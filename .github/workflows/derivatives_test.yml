@@ -1,0 +1,42 @@
+name: BTC OKX Derivatives v1.1 Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: btc-derivatives-test
+  cancel-in-progress: false
+
+jobs:
+  test-derivatives:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Validate Python syntax
+        run: python -m py_compile collect_okx_derivatives.py
+
+      - name: Verify funding OI mark and index
+        run: python -u collect_okx_derivatives.py
+
+      - name: Save verified snapshot independently of v1.0
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/v1_1_derivatives_latest.json
+          if git diff --cached --quiet; then
+            echo "No snapshot changes"
+            exit 0
+          fi
+          git commit -m "Store verified OKX BTC derivatives v1.1 snapshot"
+          git push
