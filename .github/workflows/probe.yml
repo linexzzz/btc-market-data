@@ -1,0 +1,28 @@
+
+name: BTC Exchange API Probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Check Python syntax
+        run: python -m py_compile probe_exchanges.py
+
+      - name: Test BTC exchange APIs
+        run: python -u probe_exchanges.py
