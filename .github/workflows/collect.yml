@@ -3,6 +3,8 @@ name: BTC OKX Five Timeframe Collector
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '12,32 0,4,8,12,16,20 * * *'
 
 permissions:
   contents: write
