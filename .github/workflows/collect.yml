@@ -1,0 +1,40 @@
+
+name: BTC OKX Five Timeframe Collector
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Validate Python
+        run: python -m py_compile collect_okx.py
+
+      - name: Collect and verify BTC OHLCV
+        run: python -u collect_okx.py
+
+      - name: Commit verified data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+            exit 0
+          fi
+          git commit -m "Update verified BTC OHLCV"
+          git push
