@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.1",
+  "status": "verified_derivatives_snapshot",
+  "source": "OKX",
+  "instrument": "BTC-USDT-SWAP",
+  "index_instrument": "BTC-USDT",
+  "contract_type": "USDT-margined perpetual swap",
+  "checked_at_utc": "2026-11-05T12:01:18.343000+00:00",
+  "max_data_age_seconds": 900,
+  "snapshots": {
+    "funding": {
+      "as_of": {
+        "ms": 1793880068595,
+        "utc": "2026-11-05T12:01:08.595000+00:00"
+      },
+      "predicted_funding_rate": "0.0001000000000000",
+      "last_settled_funding_rate": "0.0001000000000000",
+      "settlement_state": "settled",
+      "funding_time": {
+        "ms": 1793894400000,
+        "utc": "2026-11-05T16:00:00+00:00"
+      },
+      "next_funding_time": {
+        "ms": 1793923200000,
+        "utc": "2026-11-06T00:00:00+00:00"
+      },
+      "note": "predicted rate may change before settlement; not realized payment"
+    },
+    "open_interest": {
+      "as_of": {
+        "ms": 1793880078791,
+        "utc": "2026-11-05T12:01:18.791000+00:00"
+      },
+      "contracts": "3371946.14000001225",
+      "btc": "33719.4614000001225",
+      "usd": "2706849995.561849833761"
+    },
+    "mark_price": {
+      "as_of": {
+        "ms": 1793880078960,
+        "utc": "2026-11-05T12:01:18.960000+00:00"
+      },
+      "usdt_per_btc": "80254.3"
+    },
+    "index_price": {
+      "as_of": {
+        "ms": 1793880078757,
+        "utc": "2026-11-05T12:01:18.757000+00:00"
+      },
+      "usdt_per_btc": "80255.3"
+    }
+  },
+  "endpoints": {
+    "funding": {
+      "path": "/api/v5/public/funding-rate",
+      "http_status": 200
+    },
+    "open_interest": {
+      "path": "/api/v5/public/open-interest",
+      "http_status": 200
+    },
+    "mark_price": {
+      "path": "/api/v5/public/mark-price",
+      "http_status": 200
+    },
+    "index_price": {
+      "path": "/api/v5/market/index-tickers",
+      "http_status": 200
+    }
+  },
+  "mark_minus_index_usdt": "-1.0",
+  "mark_index_basis_pct": "-0.001246023627100017070523691270"
+}
