@@ -1,0 +1,41 @@
+name: ZEC OKX Five Timeframe Collector
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17,37 0,4,8,12,16,20 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: zec-ohlcv-collector
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Validate Python
+        run: python -m py_compile collect_zec_okx.py
+      - name: Collect and verify ZEC OHLCV
+        run: python -u collect_zec_okx.py
+      - name: Commit verified ZEC data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/zec/latest.json
+          if git diff --cached --quiet; then
+            echo "No ZEC data changes"
+            exit 0
+          fi
+          git commit -m "Update verified ZEC OHLCV"
+          git pull --rebase origin main
+          git push origin HEAD:main
