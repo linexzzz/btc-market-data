@@ -6,6 +6,7 @@ from decimal import Decimal
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+from urllib.error import HTTPError, URLError
 
 SOURCE = "https://www.okx.com/api/v5/market/candles"
 SYMBOL = "ZEC-USDT-SWAP"
@@ -32,8 +33,17 @@ def collect(label, bar, seconds, now_ms):
         url, headers={"User-Agent": "zec-data-check/1.0"}
     )
 
-    with urlopen(request, timeout=20) as response:
-        result = json.load(response)
+    result = None
+    for attempt in range(1, 4):
+        try:
+            with urlopen(request, timeout=20) as response:
+                result = json.load(response)
+            break
+        except (HTTPError, URLError, TimeoutError, OSError, ValueError) as exc:
+            print(f"{label}: attempt {attempt}/3 failed: {type(exc).__name__}: {exc}", flush=True)
+            if attempt == 3:
+                raise
+            time.sleep(attempt * 5)
 
     if result.get("code") != "0":
         raise ValueError(f"{label}: OKX API error {result}")
@@ -126,7 +136,7 @@ def collect(label, bar, seconds, now_ms):
         "candle_count": len(candles),
         "latest_close_utc": utc(last["close_ms"]),
         "previous_20_avg_volume_zec": str(average),
-        "latest_rvol_btc": rvol,
+        "latest_rvol_zec": rvol,
         "candles": candles
     }
 
