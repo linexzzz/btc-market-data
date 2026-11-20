@@ -3,7 +3,7 @@
   "source": "OKX",
   "instrument": "ZEC-USDT-SWAP",
   "contract_type": "USDT-margined perpetual",
-  "checked_at_utc": "2026-11-20T13:15:59+00:00",
+  "checked_at_utc": "2026-11-20T17:02:02.125000+00:00",
   "timeframes": {
     "D1": {
       "api_bar": "1Dutc",
@@ -2437,21 +2437,10 @@
     "4H": {
       "api_bar": "4H",
       "candle_count": 220,
-      "latest_close_utc": "2026-11-20T12:00:00+00:00",
-      "previous_20_avg_volume_zec": "163466.299",
-      "latest_rvol_zec": "1.140440085451497253265641011",
+      "latest_close_utc": "2026-11-20T16:00:00+00:00",
+      "previous_20_avg_volume_zec": "165989.552",
+      "latest_rvol_zec": "2.859270323230946487523503889",
       "candles": [
-        {
-          "open_ms": 1792008000000,
-          "close_ms": 1792022400000,
-          "open": "1153.67",
-          "high": "1159.78",
-          "low": "1122.24",
-          "close": "1146.94",
-          "volume_contracts": "9604671",
-          "volume_zec": "96046.71",
-          "volume_usdt": "109426637.7826"
-        },
         {
           "open_ms": 1792022400000,
           "close_ms": 1792036800000,
@@ -4860,60 +4849,27 @@
           "volume_contracts": "18642352",
           "volume_zec": "186423.52",
           "volume_usdt": "155869822.2022"
+        },
+        {
+          "open_ms": 1795176000000,
+          "close_ms": 1795190400000,
+          "open": "821.95",
+          "high": "824.07",
+          "low": "761.01",
+          "close": "774.37",
+          "volume_contracts": "47460900",
+          "volume_zec": "474609",
+          "volume_usdt": "379065196.4678"
         }
       ]
     },
     "1H": {
       "api_bar": "1H",
       "candle_count": 220,
-      "latest_close_utc": "2026-11-20T13:00:00+00:00",
-      "previous_20_avg_volume_zec": "38849.3115",
-      "latest_rvol_zec": "1.975237321773385868112488943",
+      "latest_close_utc": "2026-11-20T17:00:00+00:00",
+      "previous_20_avg_volume_zec": "54005.338",
+      "latest_rvol_zec": "2.704501914236700083239919728",
       "candles": [
-        {
-          "open_ms": 1794387600000,
-          "close_ms": 1794391200000,
-          "open": "971.43",
-          "high": "982.69",
-          "low": "957.44",
-          "close": "980.7",
-          "volume_contracts": "9121412",
-          "volume_zec": "91214.12",
-          "volume_usdt": "88535621.9887"
-        },
-        {
-          "open_ms": 1794391200000,
-          "close_ms": 1794394800000,
-          "open": "980.71",
-          "high": "1000.68",
-          "low": "978.34",
-          "close": "986.68",
-          "volume_contracts": "9171547",
-          "volume_zec": "91715.47",
-          "volume_usdt": "90808765.0618"
-        },
-        {
-          "open_ms": 1794394800000,
-          "close_ms": 1794398400000,
-          "open": "986.69",
-          "high": "994.82",
-          "low": "982.07",
-          "close": "989.07",
-          "volume_contracts": "3940919",
-          "volume_zec": "39409.19",
-          "volume_usdt": "38988250.1914"
-        },
-        {
-          "open_ms": 1794398400000,
-          "close_ms": 1794402000000,
-          "open": "989.05",
-          "high": "991.67",
-          "low": "975.31",
-          "close": "979.58",
-          "volume_contracts": "5995458",
-          "volume_zec": "59954.58",
-          "volume_usdt": "58938730.1286"
-        },
         {
           "open_ms": 1794402000000,
           "close_ms": 1794405600000,
@@ -7289,104 +7245,60 @@
           "volume_contracts": "7673661",
           "volume_zec": "76736.61",
           "volume_usdt": "62453431.2118"
+        },
+        {
+          "open_ms": 1795179600000,
+          "close_ms": 1795183200000,
+          "open": "809.76",
+          "high": "821.23",
+          "low": "800.32",
+          "close": "815.58",
+          "volume_contracts": "8190196",
+          "volume_zec": "81901.96",
+          "volume_usdt": "66333991.3747"
+        },
+        {
+          "open_ms": 1795183200000,
+          "close_ms": 1795186800000,
+          "open": "815.52",
+          "high": "824.07",
+          "low": "798.11",
+          "close": "813.91",
+          "volume_contracts": "10523796",
+          "volume_zec": "105237.96",
+          "volume_usdt": "85262333.9421"
+        },
+        {
+          "open_ms": 1795186800000,
+          "close_ms": 1795190400000,
+          "open": "813.91",
+          "high": "817.73",
+          "low": "761.01",
+          "close": "774.37",
+          "volume_contracts": "21073247",
+          "volume_zec": "210732.47",
+          "volume_usdt": "165015439.9392"
+        },
+        {
+          "open_ms": 1795190400000,
+          "close_ms": 1795194000000,
+          "open": "774.37",
+          "high": "792.29",
+          "low": "752.05",
+          "close": "757.13",
+          "volume_contracts": "14605754",
+          "volume_zec": "146057.54",
+          "volume_usdt": "113084160.5376"
         }
       ]
     },
     "30m": {
       "api_bar": "30m",
       "candle_count": 220,
-      "latest_close_utc": "2026-11-20T13:00:00+00:00",
-      "previous_20_avg_volume_zec": "22081.5675",
-      "latest_rvol_zec": "1.217257787518934061180212863",
+      "latest_close_utc": "2026-11-20T17:00:00+00:00",
+      "previous_20_avg_volume_zec": "38835.74",
+      "latest_rvol_zec": "1.710600853749664613060031816",
       "candles": [
-        {
-          "open_ms": 1794783600000,
-          "close_ms": 1794785400000,
-          "open": "908.88",
-          "high": "919.26",
-          "low": "900.03",
-          "close": "907.02",
-          "volume_contracts": "2050119",
-          "volume_zec": "20501.19",
-          "volume_usdt": "18668663.6572"
-        },
-        {
-          "open_ms": 1794785400000,
-          "close_ms": 1794787200000,
-          "open": "906.95",
-          "high": "916.77",
-          "low": "903.33",
-          "close": "915.6",
-          "volume_contracts": "1270813",
-          "volume_zec": "12708.13",
-          "volume_usdt": "11569580.3342"
-        },
-        {
-          "open_ms": 1794787200000,
-          "close_ms": 1794789000000,
-          "open": "915.6",
-          "high": "916.74",
-          "low": "904.68",
-          "close": "907.16",
-          "volume_contracts": "1263247",
-          "volume_zec": "12632.47",
-          "volume_usdt": "11494595.9335"
-        },
-        {
-          "open_ms": 1794789000000,
-          "close_ms": 1794790800000,
-          "open": "907.15",
-          "high": "908.5",
-          "low": "892.89",
-          "close": "898.73",
-          "volume_contracts": "1863572",
-          "volume_zec": "18635.72",
-          "volume_usdt": "16761405.9006"
-        },
-        {
-          "open_ms": 1794790800000,
-          "close_ms": 1794792600000,
-          "open": "898.8",
-          "high": "901.36",
-          "low": "886.28",
-          "close": "893.53",
-          "volume_contracts": "2064745",
-          "volume_zec": "20647.45",
-          "volume_usdt": "18394873.1603"
-        },
-        {
-          "open_ms": 1794792600000,
-          "close_ms": 1794794400000,
-          "open": "893.52",
-          "high": "896.3",
-          "low": "881.16",
-          "close": "881.42",
-          "volume_contracts": "1875543",
-          "volume_zec": "18755.43",
-          "volume_usdt": "16608592.4964"
-        },
-        {
-          "open_ms": 1794794400000,
-          "close_ms": 1794796200000,
-          "open": "881.39",
-          "high": "903.99",
-          "low": "879.44",
-          "close": "900.57",
-          "volume_contracts": "2552169",
-          "volume_zec": "25521.69",
-          "volume_usdt": "22780966.0333"
-        },
-        {
-          "open_ms": 1794796200000,
-          "close_ms": 1794798000000,
-          "open": "900.57",
-          "high": "906",
-          "low": "892",
-          "close": "899.17",
-          "volume_contracts": "1727723",
-          "volume_zec": "17277.23",
-          "volume_usdt": "15534095.6243"
-        },
         {
           "open_ms": 1794798000000,
           "close_ms": 1794799800000,
@@ -9718,181 +9630,104 @@
           "volume_contracts": "2687896",
           "volume_zec": "26878.96",
           "volume_usdt": "21826204.3848"
+        },
+        {
+          "open_ms": 1795179600000,
+          "close_ms": 1795181400000,
+          "open": "809.76",
+          "high": "813.45",
+          "low": "804.5",
+          "close": "805.75",
+          "volume_contracts": "2883448",
+          "volume_zec": "28834.48",
+          "volume_usdt": "23311805.7378"
+        },
+        {
+          "open_ms": 1795181400000,
+          "close_ms": 1795183200000,
+          "open": "805.75",
+          "high": "821.23",
+          "low": "800.32",
+          "close": "815.58",
+          "volume_contracts": "5306748",
+          "volume_zec": "53067.48",
+          "volume_usdt": "43022185.6369"
+        },
+        {
+          "open_ms": 1795183200000,
+          "close_ms": 1795185000000,
+          "open": "815.52",
+          "high": "824.07",
+          "low": "813.08",
+          "close": "820.51",
+          "volume_contracts": "2792835",
+          "volume_zec": "27928.35",
+          "volume_usdt": "22848749.9961"
+        },
+        {
+          "open_ms": 1795185000000,
+          "close_ms": 1795186800000,
+          "open": "820.49",
+          "high": "820.55",
+          "low": "798.11",
+          "close": "813.91",
+          "volume_contracts": "7730961",
+          "volume_zec": "77309.61",
+          "volume_usdt": "62413583.946"
+        },
+        {
+          "open_ms": 1795186800000,
+          "close_ms": 1795188600000,
+          "open": "813.91",
+          "high": "817.73",
+          "low": "778.41",
+          "close": "789.37",
+          "volume_contracts": "10632318",
+          "volume_zec": "106323.18",
+          "volume_usdt": "84353516.3564"
+        },
+        {
+          "open_ms": 1795188600000,
+          "close_ms": 1795190400000,
+          "open": "789.34",
+          "high": "789.34",
+          "low": "761.01",
+          "close": "774.37",
+          "volume_contracts": "10440929",
+          "volume_zec": "104409.29",
+          "volume_usdt": "80661923.5828"
+        },
+        {
+          "open_ms": 1795190400000,
+          "close_ms": 1795192200000,
+          "open": "774.37",
+          "high": "792.29",
+          "low": "768.58",
+          "close": "773.09",
+          "volume_contracts": "7962509",
+          "volume_zec": "79625.09",
+          "volume_usdt": "62175179.7532"
+        },
+        {
+          "open_ms": 1795192200000,
+          "close_ms": 1795194000000,
+          "open": "773.08",
+          "high": "783.36",
+          "low": "752.05",
+          "close": "757.13",
+          "volume_contracts": "6643245",
+          "volume_zec": "66432.45",
+          "volume_usdt": "50908980.7844"
         }
       ]
     },
     "15m": {
       "api_bar": "15m",
       "candle_count": 220,
-      "latest_close_utc": "2026-11-20T13:15:00+00:00",
-      "previous_20_avg_volume_zec": "13158.0065",
-      "latest_rvol_zec": "1.151963255224110126408586285",
+      "latest_close_utc": "2026-11-20T17:00:00+00:00",
+      "previous_20_avg_volume_zec": "29194.3685",
+      "latest_rvol_zec": "1.696392919065880805060058073",
       "candles": [
-        {
-          "open_ms": 1794982500000,
-          "close_ms": 1794983400000,
-          "open": "962.25",
-          "high": "963.86",
-          "low": "960.1",
-          "close": "961.25",
-          "volume_contracts": "365761",
-          "volume_zec": "3657.61",
-          "volume_usdt": "3519263.2792"
-        },
-        {
-          "open_ms": 1794983400000,
-          "close_ms": 1794984300000,
-          "open": "961.23",
-          "high": "962.11",
-          "low": "956.12",
-          "close": "959.06",
-          "volume_contracts": "545265",
-          "volume_zec": "5452.65",
-          "volume_usdt": "5226242.3402"
-        },
-        {
-          "open_ms": 1794984300000,
-          "close_ms": 1794985200000,
-          "open": "959",
-          "high": "960",
-          "low": "947.65",
-          "close": "951.04",
-          "volume_contracts": "1311428",
-          "volume_zec": "13114.28",
-          "volume_usdt": "12481272.8191"
-        },
-        {
-          "open_ms": 1794985200000,
-          "close_ms": 1794986100000,
-          "open": "950.97",
-          "high": "958.2",
-          "low": "950",
-          "close": "957.69",
-          "volume_contracts": "636900",
-          "volume_zec": "6369",
-          "volume_usdt": "6084185.8348"
-        },
-        {
-          "open_ms": 1794986100000,
-          "close_ms": 1794987000000,
-          "open": "957.69",
-          "high": "959.05",
-          "low": "953.87",
-          "close": "955.64",
-          "volume_contracts": "400423",
-          "volume_zec": "4004.23",
-          "volume_usdt": "3828734.3385"
-        },
-        {
-          "open_ms": 1794987000000,
-          "close_ms": 1794987900000,
-          "open": "955.63",
-          "high": "955.63",
-          "low": "946.83",
-          "close": "948.81",
-          "volume_contracts": "1051006",
-          "volume_zec": "10510.06",
-          "volume_usdt": "9985287.0744"
-        },
-        {
-          "open_ms": 1794987900000,
-          "close_ms": 1794988800000,
-          "open": "948.81",
-          "high": "957.07",
-          "low": "948.7",
-          "close": "953.96",
-          "volume_contracts": "728396",
-          "volume_zec": "7283.96",
-          "volume_usdt": "6947613.0201"
-        },
-        {
-          "open_ms": 1794988800000,
-          "close_ms": 1794989700000,
-          "open": "953.95",
-          "high": "953.95",
-          "low": "946.45",
-          "close": "948.39",
-          "volume_contracts": "800367",
-          "volume_zec": "8003.67",
-          "volume_usdt": "7597740.2307"
-        },
-        {
-          "open_ms": 1794989700000,
-          "close_ms": 1794990600000,
-          "open": "948.39",
-          "high": "950.96",
-          "low": "945",
-          "close": "947.6",
-          "volume_contracts": "884831",
-          "volume_zec": "8848.31",
-          "volume_usdt": "8385891.0661"
-        },
-        {
-          "open_ms": 1794990600000,
-          "close_ms": 1794991500000,
-          "open": "947.56",
-          "high": "949.94",
-          "low": "946.4",
-          "close": "949.54",
-          "volume_contracts": "477334",
-          "volume_zec": "4773.34",
-          "volume_usdt": "4526178.5957"
-        },
-        {
-          "open_ms": 1794991500000,
-          "close_ms": 1794992400000,
-          "open": "949.54",
-          "high": "953.09",
-          "low": "943.5",
-          "close": "946.99",
-          "volume_contracts": "924555",
-          "volume_zec": "9245.55",
-          "volume_usdt": "8768073.2011"
-        },
-        {
-          "open_ms": 1794992400000,
-          "close_ms": 1794993300000,
-          "open": "946.99",
-          "high": "951.32",
-          "low": "945.6",
-          "close": "947.35",
-          "volume_contracts": "651678",
-          "volume_zec": "6516.78",
-          "volume_usdt": "6185615.9756"
-        },
-        {
-          "open_ms": 1794993300000,
-          "close_ms": 1794994200000,
-          "open": "947.37",
-          "high": "950.21",
-          "low": "944.31",
-          "close": "949.23",
-          "volume_contracts": "451494",
-          "volume_zec": "4514.94",
-          "volume_usdt": "4276087.1358"
-        },
-        {
-          "open_ms": 1794994200000,
-          "close_ms": 1794995100000,
-          "open": "949.33",
-          "high": "951.16",
-          "low": "947.09",
-          "close": "948.6",
-          "volume_contracts": "410632",
-          "volume_zec": "4106.32",
-          "volume_usdt": "3897895.4828"
-        },
-        {
-          "open_ms": 1794995100000,
-          "close_ms": 1794996000000,
-          "open": "948.63",
-          "high": "952.57",
-          "low": "946.79",
-          "close": "949.94",
-          "volume_contracts": "434910",
-          "volume_zec": "4349.1",
-          "volume_usdt": "4129841.0557"
-        },
         {
           "open_ms": 1794996000000,
           "close_ms": 1794996900000,
@@ -12147,6 +11982,171 @@
           "volume_contracts": "1515754",
           "volume_zec": "15157.54",
           "volume_usdt": "12269620.6194"
+        },
+        {
+          "open_ms": 1795180500000,
+          "close_ms": 1795181400000,
+          "open": "807.96",
+          "high": "811.46",
+          "low": "804.5",
+          "close": "805.75",
+          "volume_contracts": "1367694",
+          "volume_zec": "13676.94",
+          "volume_usdt": "11042185.1184"
+        },
+        {
+          "open_ms": 1795181400000,
+          "close_ms": 1795182300000,
+          "open": "805.75",
+          "high": "809.99",
+          "low": "800.32",
+          "close": "809.37",
+          "volume_contracts": "2517583",
+          "volume_zec": "25175.83",
+          "volume_usdt": "20278246.5969"
+        },
+        {
+          "open_ms": 1795182300000,
+          "close_ms": 1795183200000,
+          "open": "809.36",
+          "high": "821.23",
+          "low": "806.52",
+          "close": "815.58",
+          "volume_contracts": "2789165",
+          "volume_zec": "27891.65",
+          "volume_usdt": "22743939.04"
+        },
+        {
+          "open_ms": 1795183200000,
+          "close_ms": 1795184100000,
+          "open": "815.52",
+          "high": "818.64",
+          "low": "813.08",
+          "close": "817.99",
+          "volume_contracts": "1285101",
+          "volume_zec": "12851.01",
+          "volume_usdt": "10490586.7327"
+        },
+        {
+          "open_ms": 1795184100000,
+          "close_ms": 1795185000000,
+          "open": "817.98",
+          "high": "824.07",
+          "low": "816.07",
+          "close": "820.51",
+          "volume_contracts": "1507734",
+          "volume_zec": "15077.34",
+          "volume_usdt": "12358163.2634"
+        },
+        {
+          "open_ms": 1795185000000,
+          "close_ms": 1795185900000,
+          "open": "820.49",
+          "high": "820.55",
+          "low": "798.11",
+          "close": "802.24",
+          "volume_contracts": "4290748",
+          "volume_zec": "42907.48",
+          "volume_usdt": "34627903.4264"
+        },
+        {
+          "open_ms": 1795185900000,
+          "close_ms": 1795186800000,
+          "open": "802.23",
+          "high": "814.35",
+          "low": "800.77",
+          "close": "813.91",
+          "volume_contracts": "3440213",
+          "volume_zec": "34402.13",
+          "volume_usdt": "27785680.5196"
+        },
+        {
+          "open_ms": 1795186800000,
+          "close_ms": 1795187700000,
+          "open": "813.91",
+          "high": "817.73",
+          "low": "802.78",
+          "close": "803.62",
+          "volume_contracts": "2452540",
+          "volume_zec": "24525.4",
+          "volume_usdt": "19842038.4774"
+        },
+        {
+          "open_ms": 1795187700000,
+          "close_ms": 1795188600000,
+          "open": "803.63",
+          "high": "803.77",
+          "low": "778.41",
+          "close": "789.37",
+          "volume_contracts": "8179778",
+          "volume_zec": "81797.78",
+          "volume_usdt": "64511477.879"
+        },
+        {
+          "open_ms": 1795188600000,
+          "close_ms": 1795189500000,
+          "open": "789.34",
+          "high": "789.34",
+          "low": "769.4",
+          "close": "773.71",
+          "volume_contracts": "4499861",
+          "volume_zec": "44998.61",
+          "volume_usdt": "34907324.539"
+        },
+        {
+          "open_ms": 1795189500000,
+          "close_ms": 1795190400000,
+          "open": "773.73",
+          "high": "779.61",
+          "low": "761.01",
+          "close": "774.37",
+          "volume_contracts": "5941068",
+          "volume_zec": "59410.68",
+          "volume_usdt": "45754599.0438"
+        },
+        {
+          "open_ms": 1795190400000,
+          "close_ms": 1795191300000,
+          "open": "774.37",
+          "high": "792.29",
+          "low": "768.58",
+          "close": "786.79",
+          "volume_contracts": "5137032",
+          "volume_zec": "51370.32",
+          "volume_usdt": "40177258.806"
+        },
+        {
+          "open_ms": 1795191300000,
+          "close_ms": 1795192200000,
+          "open": "786.79",
+          "high": "791.19",
+          "low": "769.54",
+          "close": "773.09",
+          "volume_contracts": "2825477",
+          "volume_zec": "28254.77",
+          "volume_usdt": "21997920.9472"
+        },
+        {
+          "open_ms": 1795192200000,
+          "close_ms": 1795193100000,
+          "open": "773.08",
+          "high": "783.36",
+          "low": "771.12",
+          "close": "778.85",
+          "volume_contracts": "1690733",
+          "volume_zec": "16907.33",
+          "volume_usdt": "13157222.73"
+        },
+        {
+          "open_ms": 1795193100000,
+          "close_ms": 1795194000000,
+          "open": "778.86",
+          "high": "779.11",
+          "low": "752.05",
+          "close": "757.13",
+          "volume_contracts": "4952512",
+          "volume_zec": "49525.12",
+          "volume_usdt": "37751758.0544"
         }
       ]
     }
